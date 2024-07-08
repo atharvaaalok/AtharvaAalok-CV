@@ -1,0 +1,318 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  citecolor = RoyalBlue,
+  linkcolor = RoyalBlue,
+  filecolor = RoyalBlue,
+  urlcolor = RoyalBlue
+}
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Atharva Aalok} % Your name
+\address{Email: \url{ae19b030@smail.iitm.ac.in} \\ Website: \url{http://atharvaaalok.me/}}  % Your phone number and email
+
+
+
+
+\begin{document}
+
+
+%====================
+% EDUCATION
+%====================
+
+\begin{rSection}{Education}
+
+% IITM
+{\bf Indian Institute of Technology (IIT), Madras} \hfill {2019-2023}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \item Bachelor of Technology with Honors in Aerospace Engineering \hfill {Chennai, India}
+   \item \textbf{CGPA: \emph{9.66/10}, Department Rank - \emph{1/58}}
+\end{list}
+
+% School
+{\bf BVB Vidyashram - Central Board of Secondary Education, India} \hfill {2016-2019}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \item Standard 12 - Percentage: 95.2\%, Science Stream Rank - \emph{1} \hfill {Jaipur, India}
+   \item Standard 10 - GPA: 10.0/10.0
+\end{list}
+
+\end{rSection}
+
+%====================
+% PUBLICATIONS
+%====================
+
+\begin{rSection}{Publications}
+
+% CNSD
+\textbf{Atharva Aalok}, Induja Pavithran, R.I. Sujith. "Breaking points of Early Warning Signals: Robustness in
+Rate-delayed tipping regime". \textbf{Accepted in} \href{http://sites.iiserpune.ac.in/~cnsd2022/}{Conference on Nonlinear Systems and Dynamics}.
+
+\end{rSection}
+
+%====================
+% RESEARCH EXPERIENCE
+%====================
+
+\begin{rSection}{Research Experience}
+
+% \begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em} % MID-SIZE BULLET, RAISED TO THE MIDDLE, INDENTATION TO ALIGN WITH HEADING
+%   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+%   }
+%   \end{list}
+ 
+% IISC Internship
+\begin{rSubsection}{Design of Jet Based UAVs with Thrust Vectoring}{May 2022 - Present}{\href{https://scholar.google.co.in/citations?user=5iAMbhMAAAAJ&hl=en}{Prof. S. Sundaram}, Artificial Intelligence and Robotics Lab, IISc Bangalore}{Bangalore, India}
+\item Designing a high altitude (5000m+) jet based UAV with 50kg payload capacity and STOL capabilities.
+\item[] \textbf{Phase 2 (Ongoing)} \hfill {May 2022 - July 2022}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+    \item Working on building a prototype vehicle as proof of concept of a novel thrust vectoring mechanism.
+    \item Produced through several design iterations a 3D model of the vehicle. Designed to optimize weight, distribution symmetry and simplicity of assembly.
+    \item Working on controller design and fabricating the required vehicle parts.
+\end{list}
+\item[] \textbf{Phase 1} \hfill {August 2022 - Present}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+    \item Modelled a 3-DOF thrust stand and fabricated through laser cutting, CNC machining, milling and 3D printing. Chose and calibrated temperature, pressure and force sensors and set up data acquisition. Handled purchase worth over 10 Lakh (\$12k).
+    \item Modelled a novel 2-DOF thrust vectoring system in SolidWorks, fabricated associated parts and set up electronics.
+    \item Automated engine control by setting up communication through RS232 protocol with the Engine Control Unit.
+\end{list}
+\end{rSubsection}
+
+% PowerSystems
+\begin{rSubsection}{Robustness of Early Warning Signals}{June 2021 - November 2022}{\href{http://www.ae.iitm.ac.in/~sujith/}{Prof. R.I. Sujith}, Sujith's Lab, IIT Madras}{Chennai, India}
+\item Rigorously studied the behavior of Early Warning Signals (EWSs) for a $3^{rd}$ order non-autonomous power system model.
+\item Performed computations and used Continuation software MatCont to explore the phase space and produce bifurcation plots. Then used extensive numerical simulation to study rate-delayed and rate-induced tipping regimes.
+\item Used Kendall's tau correlation to quantify the reliability of EWSs. Results submitted as a manuscript to CNSD.
+\end{rSubsection}
+
+% BTP
+\begin{rSubsection}{Analytical Investigations in Rate-Induced Tipping -- Bachelor's Thesis}{August 2022 - Present}{\href{http://www.ae.iitm.ac.in/~sujith/}{Prof. R.I. Sujith}, Sujith's Lab, IIT Madras}{Chennai, India}
+\item Did extensive literature survey of existing theoretical results on rate-induced tipping and EWSs.
+\item Derived a novel analytical result governing the relative motion between the system state and its fixed points in phase space for a non-autonomous $n^{th}$ order dynamical system.
+\item Developing an integration based approach combined with the derived analytical formula to attempt to prove empirical scaling laws that occur befor Hopf bifurcation.
+\end{rSubsection}
+
+\end{rSection}
+
+\vspace{1em}
+
+%====================
+% PROFESSIONAL EXPERIENCE
+%====================
+
+% \begin{rSection}{Professional Experience}
+
+% % Eplane
+% \begin{rSubsection}{Eplane}{August 2022 - October 2022}{eplane.ai}{Chennai, India}
+% \item P1 - Working on air taxi
+% \item P2 - to be written
+% \item P3 - to be written
+% \end{rSubsection}
+
+% \end{rSection}
+
+
+%====================
+% MAJOR PROJECTS
+%====================
+
+\begin{rSection}{Technical Projects}
+
+% Professional Plots
+\begin{rSubsection}{Professional Plots}{August 2021 - October 2021}{Open-Source at MATLAB, MathWorks}{Jaipur, India}
+\item Programmed and open-sourced a plotting toolbox in MATLAB that allows users to create publication quality plots quickly and effectively. Continuously evolving with 21 Updates till date.
+\item Coded high-level functions, designed a new color-coding scheme and defined customizable plot template properties.
+\item The toolbox has over 1500 downloads on MATLAB file-exchange, has a 5-star rating and has been widely shared in MATLAB communities on different platforms such as twitter and reddit.\\
+Link: \url{https://www.mathworks.com/matlabcentral/fileexchange/100766-professional-plots}
+\end{rSubsection}
+
+% UAV Design
+\begin{rSubsection}{Search and Rescue UAV Design}{January 2022 - June 2022}{Guide: Prof. M. Ramakrishna and B. Govindarajan}{Chennai, India}
+\item Worked in a team of 5 to produce conceptual design of a Search and Rescue, Fixed-wing, electric UAV with VTOL capability. The design uses state-of-the-art Computer Vision models for victim identification.
+\item Determined mission specifications, analyzed competitive aircraft data, calculated and optimized aircraft parameters and created a 3D model of the aircraft. Wrote over 2000 lines of code.
+\item Produced a 10.47kg, 1.95m wingspan UAV design with Payload capacity: 1.3kg, Range: 115km, Endurance: 90 min and Cruise Speed: 20m/s. \\
+Link: \href{https://github.com/atharvaaalok/Team_SARAS/blob/main/README.md}{Github}, \href{https://drive.google.com/file/d/1HocN6BsbAa9H1-C-mmuJQs2mCIaiqp2t/view?usp=share_link}{Report}, \href{https://docs.google.com/presentation/d/1NcbMm-wtPhm4w6FDH98jIfHGdG3I0Hs5Ku-Nd__8FkQ/edit?usp=share_link}{Presentation}
+\end{rSubsection}
+
+% Structural Design
+\begin{rSubsection}{UAV Structural Design}{August 2022 - Present}{Guide: Prof. H.S.N. Murthy and S. Murugan}{Chennai, India}
+\item Working in a team of 5 to design and fabricate a Fixed-wing, electric UAV with VTOL capabilities based on our previous conceptual design.
+\item Analyzed and tested different materials and finalized an aluminium based frame. Wrote computer programs to calculate stresses in different Wing and Fuselage structural members and calculated and optimized dimensions of spars, stringers, ribs and bulkheads for design against failure. Design code open-sourced on MATLAB as a toolbox.
+\item Currently fabricating Wing and Fuselage components, and assembling and programming electronics. \\
+Link: \href{https://github.com/atharvaaalok/UAV_StructuralDesign}{Github}
+\end{rSubsection}
+
+% Vector Field Path Following
+\begin{rSubsection}{Vector Field Path Following for MAVs}{October 2022}{Guide: Prof. S. Ghosh}{Chennai, India}
+\item Implemented Vector Field based guidance algorithms for path following. Algorithms based on \href{https://ieeexplore.ieee.org/document/4252175}{this paper}.
+\item Suggested 2 possible extensions for faster convergence to desired path based on using multiple sliding surfaces. \\
+Link: \href{https://github.com/atharvaaalok/Vector_Field_Path_Following_for_MAVs#sliding-surfaces}{Github}, \href{https://docs.google.com/presentation/d/1O_diuoXAzuqIJYsFHQUrf4PdcYyyF2Flz2D4jMYAFyk/edit?usp=sharing}{Presentation}
+\end{rSubsection}
+
+% Hurst Exponent
+\begin{rSubsection}{Hurst Exponent}{September 2021}{Colleague: Dr. I. Pavithran}{Chennai, India}
+\item Implemented MFDFA algorithm in MATLAB for calculating Hurst Exponent of a time series based on \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3366552/}{this paper}.
+\item The code was open-sourced on MATLAB and has $\sim$100 downloads. \\
+Link: \href{https://in.mathworks.com/matlabcentral/fileexchange/100988-hurst-exponent}{https://in.mathworks.com/matlabcentral/fileexchange/100988-hurst-exponent}
+\end{rSubsection}
+
+
+\end{rSection}
+
+\vspace{1em}
+
+%====================
+% TECHNICAL SKILLS
+%====================
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages : & MATLAB, Python, C \\
+Softwares and Packages \hfill: & \LaTeX, Simulink, ROS, Gazebo, MatCont, XPP AUTO, Proteus, Numpy, Tkinter, \\
+& SciPy, Matplotlib, OpenCV, Pandas, Pygame \\
+Hardware \hfill: & Raspberry Pi, Arduino, Thermocouples, Pitot tubes, 6-axis Load Cells \\
+3D Modelling \hfill: & SolidWorks, Fusion 360 \\
+Creative Skills \hfill: & Adobe Premiere Pro, Filmora, Adobe Photoshop, Gimp, Figma
+\end{tabular}
+
+\end{rSection}
+
+
+%====================
+% SCHOLASTIC ACHIEVEMENTS
+%====================
+
+
+\begin{rSection}{Awards and Recognition}
+
+\vspace{-0.75em}
+
+\begin{rSubsection}{}{} {} {}
+\item Amongst the top 3\% Contributor on the MathWorks Website (MATLAB Community). \hfill {Present}
+\item Recipient of the prestigious KVPY Fellowship by Dept. of Science and Technology, Govt. of India. \hfill {2019}
+\item Awarded the coveted National Talent Search Examination (NTSE) fellowship by NCERT, Govt. of India \hfill {2018}
+
+\end{rSubsection}
+
+\end{rSection}
+
+
+%====================
+% MINOR PROJECTS
+%====================
+
+\begin{rSection}{Other Projects}
+
+% Face Recognition Neural Network
+{\textbf{\href{https://github.com/atharvaaalok/Anime_NeuralNetwork}{Face Recognition Neural Network}} - \emph{MOOC: Machine Learning}} \hfill {May 2021}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+\item Created a dataset of animated faces and trained a neural network on it. Achieved 97\% accuracy on test set.
+\end{list}
+
+% Image Filter
+{\textbf{\href{https://github.com/atharvaaalok/Filters_in_C}{Image Filter}} - \emph{MOOC: Harvard CS50}} \hfill {May 2020}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+\item Programmed a cross-platform project in C for applying image filters: reflect, grayscale, blur, color invert.
+\end{list}
+
+% LED Matrix Game Console
+{\textbf{\href{https://github.com/atharvaaalok/LED_matrix_snake_RPi}{Retro Game Console}} - \emph{Personal Project}} \hfill {June 2021}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+\item Coded the snake game in python, integrated it on the Raspberry Pi4 and displayed it on an 8x8 LED matrix to make a playable retro game console.
+\end{list}
+
+% DS Library
+{\textbf{\href{https://github.com/atharvaaalok/DS_Library_C}{Data Structures Library in C}} - \emph{Guide: Late Mr. Goyal}} \hfill {September 2020}
+\begin{list}{\raisebox{0.3ex}{\tiny$\bullet$}}{\leftmargin=1em}
+\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+\item Implemented a data structures library in C for creating and parsing linked lists, queues, stacks, binary trees both recursively and iteratively.
+\end{list}
+
+\end{rSection}
+
+
+%====================
+% LEADERSHIP
+%====================
+
+\begin{rSection}{Leadership}
+
+% Academic Legislator
+\begin{rSubsection}{Department Academic Legislator}{April 2022 - March 2023}{Elected representative, Department of Aerospace Engineering}{Chennai, India}
+\item Assembled and leading a team of 5 to create a student website with information on alumni, internship and placement statistics and academic resources.
+\item Helping students through their internship and job placement journey by acting as an official point of contact and guiding them through the process.
+\end{rSubsection}
+
+% Aerospace Engineering Association
+\begin{rSubsection}{Member, Aerospace Engineering Association}{April 2022 - March 2023}{Aerospace Engineering Association $\vert$ IIT Madras}{Chennai, India}
+\item Worked in a team to ideate and launch a professor research showcase and interaction series where every month 2 professors present their research to students.
+\item Ideated and launched an intra-department sports league to encourage informal student-professor interactions.
+\item Organized freshmen ice-breaker sessions and formal interaction sessions with seniors on academics and internships.
+\end{rSubsection}
+
+% SAATHI Mentor
+\begin{rSubsection}{Freshman Mentor}{August 2021 - May 2022}{SAATHI - IITM Mental Health and Wellness Community}{Chennai, India}
+\item Mentored closely 6 freshmen through their first year by helping them with academic and general queries.
+\item Recognized as a \emph{Star Mentor} - top 10 percent from over a 100 mentors.
+\end{rSubsection}
+
+\end{rSection} 
+
+\vspace{-1em}
+%====================
+% EXTRA-CURRICULAR ACTIVITIES
+%====================
+
+\begin{rSection}{Extra-Curricular Activities}
+
+\vspace{-0.75em}
+
+\begin{rSubsection}{}{} {} {} 
+\item Acted in the opening scene of the film \href{https://youtu.be/JoRwXMLsVis?t=29}{\emph{History of Yoga}} which has been screened in 6 different continents.
+\item Long distance events, running: 5km to 20km and cycling: upto 65km with participation in marathons in multiple cities.
+\end{rSubsection}
+
+\end{rSection}
+
+
+%====================
+% THE END
+%====================
+
+\end{document}
